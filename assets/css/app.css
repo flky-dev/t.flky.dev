@@ -1,0 +1,77 @@
+body {
+	font-family: sans-serif;
+	background-color: #1d1e20;
+	color: white;
+	padding: 20px;
+}
+
+#datepicker {
+	background-color: #2e2e33;
+	color: white;
+	box-shadow: none;
+	border: 2px solid #1d1e20;
+	padding: 5px;
+	border-radius: 8px;
+	margin-bottom: 20px;
+}
+
+#datepicker::-webkit-calendar-picker-indicator {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+
+table {
+	background-color: #2e2e33;
+	border-collapse: collapse;
+	border-radius: 8px;
+}
+
+th,
+td {
+	border-collapse: collapse;
+	padding: 10px 15px;
+	border: 2px solid #414244;
+	border-top: 0 none;
+	border-bottom: 0 none;
+}
+
+td:last-child, th:last-child {
+    border-right: 0 none;
+}
+
+td:first-child, th:first-child {
+    border-left: 0 none;
+}
+
+.markdown input {
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	color: white;
+	font-family: monospace;
+	outline: none;
+	height: 25px;
+}
+
+.markdown button {
+	background-color: 2px solid white;
+	border-radius: 3px;
+	padding: 3px 10px;
+	box-shadow: none;
+	border: none;
+	color: black;
+	transition: background-color 0.2s ease-in-out;
+	height: 21px;
+	margin: 2px 0px;
+}
+
+h2 {
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+
+
+a,
+a:focus {
+	color: white;
+}

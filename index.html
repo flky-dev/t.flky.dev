@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+        <link rel=preload href=https://cdn.flky.dev/general/apple-touch-icon.png as=image>
+        <link rel=icon href=https://cdn.flky.dev/general/1favicon.ico>
+        <link rel=icon type=image/png sizes=16x16 href=https://cdn.flky.dev/general/favicon-16x16.png>
+        <link rel=icon type=image/png sizes=32x32 href=https://cdn.flky.dev/general/favicon-32x32.png>
+        <link rel=apple-touch-icon href=https://cdn.flky.dev/general/apple-touch-icon.png>
+  
+        <!-- Metadata, yay! -->
+        <title>Discord Timestamp Generator</title>
+        <meta name="description" content="Discord Timestamp Generator">
+        <meta property="og:title" content="Discord Timestamp Generator">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://t.flky.dev">
+        <meta property="og:description" content="Discord Timestamp Generator">
+        <meta property="og:image" content="https://cdn.flky.dev/general/pfp.webp">
+  
+        <!-- Stylesheet -->
+        <link href="assets/css/app.css" rel="stylesheet">
+
+        <!-- Anonymous, self hosted and privacy oriented analytics powered by Ackee. Don't worry, I'm not facebook^^ -->
+        <script async src="https://analytics.flky.dev/tracker.js" data-ackee-server="https://analytics.flky.dev"
+           data-ackee-domain-id="08abada7-e88e-46e7-82ae-0de17037b0b3"></script>
+    </head>
+
+	<body>
+		<center>
+		<h2> Discord Timestamp Generator</h2>
+		<br>
+		<input type="datetime-local" id="datepicker" autofocus />
+		<table>
+			<thead>
+				<tr>
+					<th>Format</th>
+					<th>Preview</th>
+					<th>Markdown</th>
+				</tr>
+			</thead>
+			<tbody id="output"></tbody>
+		</table>
+		<br />
+
+		<!-- JS that makes the website work -->
+		<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+		<script src="https://unpkg.com/dayjs@1.8.21/plugin/localizedFormat.js"></script>
+		<script src="https://unpkg.com/dayjs@1.8.21/plugin/relativeTime.js"></script>
+		<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+		<script src="assets/js/app.js"></script>
+	</center>
+	</body>
+
+</html>
